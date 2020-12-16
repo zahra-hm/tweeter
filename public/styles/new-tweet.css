@@ -1,0 +1,30 @@
+button {
+  background-color:#4056A1;
+  color: white;
+}
+
+input {
+  border: 0 none;
+  outline: none;
+  background-color: transparent;
+  width: 100%
+}
+
+.input-box {
+  font-family: 'Sans Pro';
+  border: 0 none;
+  border-bottom: 5px solid rgb(70, 68, 68);
+  padding: 10px 10px;
+  outline: none;
+}
+
+.count, .input-box {
+  color: rgb(70, 68, 68);
+}
+.bottomline {
+  display: flex;
+  font-family: 'Bungee';
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
