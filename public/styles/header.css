@@ -1,0 +1,17 @@
+.header {
+  background-image: url("/images/asfalt-light.png");
+  background-color: peru;
+  height: 400px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
