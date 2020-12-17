@@ -19,9 +19,9 @@ html {
 body {
   color: #FFFF;
   background-color: #f4f1ec;
-  font-size: 24px;
+  /* font-size: 24px;  */
   font-family: 'Source Sans Pro', sans-serif;
-  border: 2px dashed red;
+  /* border: 2px dashed red; */
 }
 
 /*
@@ -32,5 +32,5 @@ body {
   max-width: 90%;
   margin: auto;
   color: black;
-  border: 2px dashed brown;
+  /* border: 2px dashed brown; */
 }
