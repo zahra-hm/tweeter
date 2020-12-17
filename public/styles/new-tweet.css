@@ -3,6 +3,10 @@ button {
   color: white;
 }
 
+button:hover {
+  background-color: #27345f;
+}
+
 input {
   border: 0 none;
   outline: none;
@@ -18,7 +22,7 @@ input {
   outline: none;
 }
 
-.count, .input-box {
+.counter, .input-box {
   color: rgb(70, 68, 68);
 }
 .bottomline {
@@ -27,4 +31,8 @@ input {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 10px;
+}
+
+.counter.error {
+  color: red;
 }
