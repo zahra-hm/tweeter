@@ -7,6 +7,10 @@ button:hover {
   background-color: #27345f;
 }
 
+.new-tweet{
+  font-size: 24px;
+}
+
 input {
   border: 0 none;
   outline: none;
@@ -20,6 +24,7 @@ input {
   border-bottom: 5px solid rgb(70, 68, 68);
   padding: 10px 10px;
   outline: none;
+  
 }
 
 .counter, .input-box {
