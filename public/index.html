@@ -32,7 +32,7 @@
     <nav class="nav">
       <div class="row1">
         <div><b>tweeter</b></div>
-        <div class="heading"><b>Write</b> a new tweet</div>
+        <div class="heading"><strong>Write</strong> a new tweet</div>
       </div>
       <div class="row2">
         <div class="logo">
@@ -44,11 +44,11 @@
 
     <header class="header">
       <div class="avatar">
-          <img src="/images/profile-hex.png"> 
+          <img class="avatarImage" src="/images/profile-hex.png"> 
       </div>
       <br>
       <div class="avatar-name">
-          <h2>Your Name</h2>
+          <h2>Jane Smith</h2>
       </div>
     </header>
 
@@ -69,19 +69,38 @@
         </form>
       </section>
 
+      <!-- SAMPLE TWEETS -->
+
       <section id = "tweets-container">
         <article class="tweet">
           <header>
-            <div>
-              <span class="avatar"></span>
+            <div class="info">
+              <span class="avatar">&#128114</span>
               <span class="name">Amy Adams</span>
             </div>
             <span class="handle">@AmyAdams</span>
           </header>
-          <p class="tweetInfo"> Watch my new movie, Enchanted2! #Sequel</p>
+          <p class="tweetData"> Watch my new movie, Enchanted2! #Sequel</p>
           <footer>
             <span class="date">10 days ago</span>
-            <span class ="icons"></span>
+            <span class ="icons">&#127988 &#128257 &#128153</span>
+          </footer>
+        </article>
+
+      <!-- 2nd TWEET -->
+
+        <article class="tweet">
+          <header>
+            <div class="info">
+              <span class="avatar">&#128114</span>
+              <span class="name">JaneDoe</span>
+            </div>
+            <span class="handle">@JaneDoe</span>
+          </header>
+          <p class="tweetData"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <footer>
+            <span class="date">6 days ago</span>
+            <span class ="icons">&#127988 &#128257 &#128153</span>
           </footer>
         </article>
       </section>
