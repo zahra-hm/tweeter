@@ -42,10 +42,6 @@ $(document).ready(function () {
     }
   });
 
-
-
-  // loadTweets();
-
   const escape =  function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
@@ -57,7 +53,7 @@ $(document).ready(function () {
     console.log("length: " + length);
     let error = $('.invalid-text').slideUp()
     if (length === 0) {
-      error.text('You have not written anything! &#9888;').slideDown();
+      error.text('You have not written anything!').slideDown();
       return false;
     } else if (length > 140) {
       error.text('Too long!').slideDown();
@@ -68,10 +64,8 @@ $(document).ready(function () {
 
   }
 
-
-
   const createTweetElement = function(tweet) {
-    let date = new Date(tweet.created_at);
+    let date = new Date(tweet.created_at).toLocaleDateString();
 
     return `
     <article class="tweet">
@@ -90,7 +84,5 @@ $(document).ready(function () {
     </article>
     `
   }
-
-// renderTweets(data);
 
 });
