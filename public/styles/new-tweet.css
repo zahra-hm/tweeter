@@ -41,3 +41,8 @@ input {
 .counter.error {
   color: red;
 }
+
+.new-tweet .invalid-text{
+  color:white;
+  background-color: red;
+}
