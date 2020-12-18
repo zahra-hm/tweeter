@@ -6,7 +6,6 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
@@ -22,9 +21,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-    <script src="/scripts/composer-char-counter.js"></script>
-    <script type="text/javascript" src="/Users/zahrahm/lighthouse/w4/tweeter/server/index.js"></script>
+    <script defer type="text/javascript" src="/scripts/client.js"></script>
+    <script defer src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -56,7 +54,9 @@
     <main class="container">
       <section class="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
-        <form action="/tweets" method="POST">
+        <div class="invalid-text"></div>
+
+        <form id="new-tweet" action="/tweets" method="POST">
           
           <div class="input-box">
             <!-- <div class="topline"> <label for="tweet-text">What are you humming about?</label></div> -->
@@ -68,44 +68,8 @@
           </div>
         </form>
       </section>
-
-      <!-- SAMPLE TWEETS -->
-
-      <section id = "tweets-container">
-        <article class="tweet">
-          <header>
-            <div class="info">
-              <span class="avatar">&#128114</span>
-              <span class="name">Amy Adams</span>
-            </div>
-            <span class="handle">@AmyAdams</span>
-          </header>
-          <p class="tweetData"> Watch my new movie, Enchanted2! #Sequel</p>
-          <footer>
-            <span class="date">10 days ago</span>
-            <span class ="icons">&#127988 &#128257 &#128153</span>
-          </footer>
-        </article>
-
-      <!-- 2nd TWEET -->
-
-        <article class="tweet">
-          <header>
-            <div class="info">
-              <span class="avatar">&#128114</span>
-              <span class="name">JaneDoe</span>
-            </div>
-            <span class="handle">@JaneDoe</span>
-          </header>
-          <p class="tweetData"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <footer>
-            <span class="date">6 days ago</span>
-            <span class ="icons">&#127988 &#128257 &#128153</span>
-          </footer>
-        </article>
+        <section id = "tweets-container"></section>
       </section>
-
-
     </main>
   </body>
 </html>
