@@ -6,12 +6,12 @@
 .tweet:hover {
   box-shadow: 5px 10px #4057a1c4;
   color: rgb(58, 54, 54);
-  border: 3px solid rgb(41, 58, 105);
+  border: 3px solid rgb(58, 54, 54);
 
 }
 
-.tweet:hover .handle {
-  display: inline;
+.tweet:hover .tweetData {
+  border-bottom: 3px solid rgb(58, 54, 54);
 }
 
 .tweet {
@@ -34,11 +34,8 @@
 }
 
 .handle{
-  display: none;
-  color: darkblue;
-  opacity: 30%;
   float: right;
-  font-size: 35px;
+  font-size: 25px;
   margin: 20px;
 }
 
@@ -59,7 +56,7 @@
 }
 
 .name {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .date {
