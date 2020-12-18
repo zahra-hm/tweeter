@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -39,37 +40,40 @@
       </div>
     </nav>
 
-
-    <header class="header">
-      <div class="avatar">
-          <img class="avatarImage" src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div class="avatar-name">
-          <h2>Jane Smith</h2>
-      </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <!-- <h2>Compose Tweet</h2> -->
-        <div class="invalid-text"></div>
-
-        <form id="new-tweet" action="/tweets" method="POST">
-          
-          <div class="input-box">
-            <!-- <div class="topline"> <label for="tweet-text">What are you humming about?</label></div> -->
-            <div class="textbox"><input type="text" name="text" id="tweet-text" placeholder="What are you humming about?" ></div>
+    <div class="front-page">
+      <div class="head">
+        <header class="header">
+          <div class="avatar">
+              <img class="avatarImage" src="/images/profile-hex.png"> 
           </div>
-          <div class="bottomline">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+          <div class="avatar-name">
+              <h2>Jane Smith</h2>
           </div>
-        </form>
-      </section>
-        <section id = "tweets-container"></section>
-      </section>
-    </main>
+        </header>
+      </div>
+
+      <!-- Page-specific (main) content here -->
+      <div class="main-tweets">
+        <main class="container">
+          <section class="new-tweet">
+            <!-- <h2>Compose Tweet</h2> -->
+            <div class="invalid-text"></div>
+
+            <form id="new-tweet" action="/tweets" method="POST">
+              
+              <div class="input-box">
+                <div class="textbox"><input type="text" name="text" id="tweet-text" placeholder="What are you humming about?" ></div>
+              </div>
+              <div class="bottomline">
+                <button type="submit">Tweet</button>
+                <output name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+            </form>
+          </section>
+            <section id = "tweets-container"></section>
+          </section>
+        </main>
+    </div>
+    </div>
   </body>
 </html>
