@@ -8,6 +8,7 @@
 
 
 $(document).ready(function () {
+  // renders tweets and appends dynamically
   const renderTweets = function(tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
@@ -48,6 +49,7 @@ $(document).ready(function () {
     return div.innerHTML;
   }
 
+  // function checks if tweet is within valid range
   const validateTweet = function() {
     const length = $('#tweet-text').val().length;
     console.log("length: " + length);
@@ -63,7 +65,7 @@ $(document).ready(function () {
     return true;
 
   }
-
+  // creates tweet using html
   const createTweetElement = function(tweet) {
     let date = new Date(tweet.created_at).toLocaleDateString();
 
