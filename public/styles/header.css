@@ -22,10 +22,7 @@
 }
 
 .avatar-name {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* align-items: flex-end; */
   font-size: 24px;
-  /* border: 2px dashed green; */
+  padding-top: 50px;
 }
+
