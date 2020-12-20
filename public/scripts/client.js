@@ -27,6 +27,7 @@ $(document).ready(function () {
       console.log("RESPONSE: ")
       console.log(response);
       renderTweets(response);
+      $('#tweet-text').val("");
     })
   };
 
